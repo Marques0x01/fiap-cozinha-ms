@@ -10,7 +10,6 @@ class KitchenService {
             body: JSON.stringify({
               message: (`Order updated`),
               statusCode: 200,
-              orders: result,
               id: bodyUpdateStatusOder.id,
               status: bodyUpdateStatusOder.status
             })
