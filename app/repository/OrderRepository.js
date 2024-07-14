@@ -16,7 +16,6 @@ class OrderRepository {
             console.error('Error in updating order:', err.stack);
         } finally {
             await connection.end();
-            return result.rows;
         }
     }
 
