@@ -2,7 +2,7 @@ const { Database } = require("../config/DatabaseConfig.js").default;
 
 class OrderRepository {
 
-    async updateOrderStatus(id, status) {
+    async updateStatus(id, status) {
         let TABLE = 'public."order"';
         const connection = new Database();
 
