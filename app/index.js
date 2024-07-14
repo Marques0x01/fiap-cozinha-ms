@@ -16,7 +16,7 @@ exports.handler = async (event) => {
         return {
           statusCode: 404,
           body: JSON.stringify({
-            message: `Resource not found: ${event.path}`,
+            message: `Resource not found: ${method}`,
             statusCode: 404
           })
         };
